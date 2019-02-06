@@ -108,9 +108,27 @@
  а также ряд производных величин, связанных с вычисленными средними приростами и сглаженными уровнями ряда:
 \[ \frac{\bar{u}_t}{\bar{y}_t};\ \ \log \bar{u}_t;\ \ \log \dfrac{\bar{u}_t}{\bar{y}_t};\ \ \log \dfrac{\bar{u}_t}{\bar{y}_t^2}. \]
 
-В соответствии с характером изменения средних приростов и производных показателей выбирается вид кривой роста для исходного временного ряда, при этом используется таблица.
+В соответствии с характером изменения средних приростов и производных показателей выбирается вид кривой роста для исходного временного ряда, при этом используется таблица \ref{my-label}.
 
-
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[!h]
+	\caption{My caption}
+	\label{my-label}
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|l|l|}
+			\hline
+			Показатель                                                                                                                 & Характер изменения показателя во времени & Вид кривой роста                               \\ \hline
+			Первый средний прирост \textbackslash{}bar\{u\}\_t                                                                         & Примерно одинаковы                       & Полином первого порядка (прямая)               \\ \hline
+			То же                                                                                                                      & Изменяются линейно                       & Полином второго порядка (парабола)             \\ \hline
+			Второй средний прирост \textbackslash{}bar\{u\}\_t\textasciicircum{}\{(2)\}                                                & Изменяются линейно                       & Полином третьего порядка (кубическая парабола) \\ \hline
+			\textbackslash{}dfrac\{\textbackslash{}bar\{u\}\_t\}\{\textbackslash{}bar\{y\}\_t\}                                        & Примерно одинаковы                       & Простая экспонента                             \\ \hline
+			\textbackslash{}log \textbackslash{}bar\{u\}\_t                                                                            & Изменяются линейно                       & Модифицированная экспонента                    \\ \hline
+			\textbackslash{}log \textbackslash{}dfrac\{\textbackslash{}bar\{u\}\_t\}\{\textbackslash{}bar\{y\}\_t\}                    & Изменяются линейно                       & Кривая Гомперца                                \\ \hline
+			\textbackslash{}log \textbackslash{}dfrac\{\textbackslash{}bar\{u\}\_t\}\{\textbackslash{}bar\{y\}\_t\textasciicircum{}2\} & Изменяются линейно                       & Логистическая кривая                           \\ \hline
+		\end{tabular}%
+	}
+\end{table}
 
 
 
