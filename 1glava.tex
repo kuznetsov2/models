@@ -113,10 +113,10 @@
 % Please add the following required packages to your document preamble:
 % \usepackage{graphicx}
 \begin{table}[!h]
-	\caption{My caption}
+	\small
+	\caption{Виды кривой роста для исходного временного ряда}
 	\label{my-label}
-	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|l|l|}
+	\begin{tabularx}{\textwidth}{|p{5cm}|K{5cm}|K{5cm}|}
 			\hline
 			Показатель                                                                                                                 & Характер изменения показателя во времени & Вид кривой роста                               \\ \hline
 			Первый средний прирост \textbackslash{}bar\{u\}\_t                                                                         & Примерно одинаковы                       & Полином первого порядка (прямая)               \\ \hline
@@ -126,8 +126,7 @@
 			\textbackslash{}log \textbackslash{}bar\{u\}\_t                                                                            & Изменяются линейно                       & Модифицированная экспонента                    \\ \hline
 			\textbackslash{}log \textbackslash{}dfrac\{\textbackslash{}bar\{u\}\_t\}\{\textbackslash{}bar\{y\}\_t\}                    & Изменяются линейно                       & Кривая Гомперца                                \\ \hline
 			\textbackslash{}log \textbackslash{}dfrac\{\textbackslash{}bar\{u\}\_t\}\{\textbackslash{}bar\{y\}\_t\textasciicircum{}2\} & Изменяются линейно                       & Логистическая кривая                           \\ \hline
-		\end{tabular}%
-	}
+		\end{tabularx}
 \end{table}
 
 
